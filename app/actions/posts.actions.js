@@ -20,5 +20,5 @@ export const retrievePosts = () => {
             url: `${API_URL}/posts`
         });
     }
-} 
+};
 
