@@ -6,10 +6,14 @@ export default function thunkHelper(dispatch, types, config) {
 
     $http(config).then(response => {
         //Dispatch SUCCESS action
-        dispatch({
-            type: successType,
-            payload: response.data
-        });
+        setTimeout(() => {
+            dispatch({
+                type: successType,
+                payload: response.data
+            });
+        }, 1000)
+
+
     }).catch(error => {
         //Dispatch ERROR action
         dispatch({

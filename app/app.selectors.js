@@ -8,3 +8,16 @@ export const GetPostsListSelector = createSelector(
         return postsState.postsList;
     }
 );
+export const GetNewPostsListSelector = createSelector(
+    [GetPostsState],
+    (postsState) => {
+        return postsState.newPosts;
+    }
+);
+
+export const IsFetchingListSelector = createSelector(
+    [GetPostsState],
+    (postsState) => {
+        return postsState.isFetching;
+    }
+);

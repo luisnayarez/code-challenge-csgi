@@ -1,5 +1,5 @@
 import { retrievePosts } from './actions/posts.actions';
-import { GetPostsListSelector } from './app.selectors';
+import { GetPostsListSelector,IsFetchingListSelector } from './app.selectors';
 import './app.scss';
 
 
@@ -21,7 +21,8 @@ class AppController {
 
     mapStateToTarget(state) {
         return {
-            postsList: GetPostsListSelector(state)
+            postsList: GetPostsListSelector(state),
+            isFetching: IsFetchingListSelector(state)
         }
     }
 

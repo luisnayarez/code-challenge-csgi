@@ -1,0 +1,21 @@
+<div class="col-md-5">
+  <div class="form-area">
+
+    <form role="form">
+      <br style="clear:both">
+      <h3 style="margin-bottom: 25px; text-align: center;">New Post</h3>
+      <div class="form-group">
+        <input type="text" class="form-control" ng-model="title" placeholder="Title" required>
+      </div>
+
+      <div class="form-group">
+        <textarea class="form-control" type="textarea" ng-model="body" placeholder="Body" maxlength="140" rows="4" required></textarea>
+      </div>
+
+      <button ng-show="$ctrl.state.postsList.length > 0" type="submit" class="btn btn-primary pull-right" ng-click="$ctrl.addPosts(title, body)">Submit</button>
+      <button ng-show="$ctrl.state.newPosts.length > 0" class="btn btn-primary" type="button" ng-click="$ctrl.savePosts()">Save List</button>
+    </form>
+
+  <p></p>
+  </div>
+</div>

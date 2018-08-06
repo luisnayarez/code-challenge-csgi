@@ -9,7 +9,8 @@ export default function config($stateProvider, $locationProvider, $httpProvider,
 
     $stateProvider.state(APP_ROOT, {
         url: '/',
-        template: '<interview-app></interview-app>'
+        template: "<interview-app></interview-app>" +
+            "<new-post></new-post>"
     });
 
     const createLoggerConfigObject = {
