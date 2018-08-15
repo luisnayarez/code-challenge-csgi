@@ -1,0 +1,10 @@
+
+<div class="container">
+    <h1>Products</h1>
+    <button class="btn btn-primary" type="button" ng-click="$ctrl.retrieveProducts()">Retrieve Products</button>
+    <div>
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="product in $ctrl.state.productsList track by product.id">{{product.title}}</li>
+        </ul>
+    </div>
+</div>
