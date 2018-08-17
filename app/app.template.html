@@ -1,10 +1,4 @@
 <div class="container">
-    <h1>CSGI Challenge</h1>
-    <button class="btn btn-primary" type="button" ng-click="$ctrl.retrievePosts()">Retrieve Posts</button>
-    <div>
-        <h2 ng-show="$ctrl.state.isFetching">Loading...</h2>
-        <ul>
-            <li ng-repeat="post in $ctrl.state.postsList track by post.id">{{post.title}}</li>
-        </ul>
-    </div>
+    <a ui-sref="app.products">Products</a>
+    <a ui-sref="app.posts">Posts</a>
 </div>

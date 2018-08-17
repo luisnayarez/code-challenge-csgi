@@ -1,4 +1,6 @@
 import ThunkHelper from '../utilities/thunkHelper';
+const API_URL = 'http://localhost:3005';
+
 
 export const RETRIEVE_PRODUCTS = {
     BEGIN: 'RETRIEVE_PRODUCTS_BEGIN',
@@ -16,7 +18,7 @@ export const retrieveProducts = () => {
     return dispatch => {
         return ThunkHelper(dispatch, RETRIEVE_PRODUCTS_EVENTS, {
             method: 'get',
-            url: '../db/products.json'
+            url: `${API_URL}/products`
         });
     }
 };

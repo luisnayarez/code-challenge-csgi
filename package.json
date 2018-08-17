@@ -7,7 +7,8 @@
     "start:app": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:server": "json-server --watch ./db/db.json --port 3004"
+    "start:server": "json-server --watch ./db/db.json --port 3004",
+    "start:server:products": "json-server --watch ./db/products.json --port 3005"
   },
   "author": "CSGI team",
   "license": "ISC",

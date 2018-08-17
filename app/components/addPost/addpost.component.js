@@ -1,7 +1,7 @@
 import angular from 'angular';
 import template from './addpost.template.html';
 import {addPosts,savePosts} from "../../actions/posts.actions";
-import {GetPostsListSelector,GetNewPostsListSelector} from "../../app.selectors";
+import {GetPostsListSelector,GetNewPostsListSelector} from "../../components/posts/posts.selectors";
 
 class NewPostController {
     constructor($ngRedux) {
